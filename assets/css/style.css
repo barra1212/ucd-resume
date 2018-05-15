@@ -77,7 +77,7 @@ header {
 }
 
 .logo {
-    background: url("../images/barry.jpg");
+    background: url("../images/rosie.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,4 +201,16 @@ footer .cv-pdf i:hover {
 
 #footer-details {
     margin: 20px;
+}
+
+
+/*----------------------------------------------Three Reasons*/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
 }

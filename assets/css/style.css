@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-p {
-    font-family: "Roboto", sans-serif;
-}
-
-/*----------------------------------------------Colors*/
+/*--------------------------------------------Colors*/
 
 .bg-color-name-title {
     background-color: #676767;
@@ -18,7 +14,7 @@ p {
     background-color: #f4f4f4;
 }
 
-.bg-color-work-skills {
+.bg-color-skills {
     background-color: #ffffff;
 }
 
@@ -27,6 +23,14 @@ p {
 }
 
 .bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
     background-color: #ffffff;
 }
 
@@ -43,10 +47,30 @@ p {
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
 
-/*----------------------------------------------Special Paddings/Margins/Text*/
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -69,6 +93,7 @@ h4 {
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
 }
@@ -81,7 +106,8 @@ h4 {
     margin-bottom: 40px;
 }
 
-/*----------------------------------------------Heading*/
+
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -130,7 +156,7 @@ header {
 .menuitem {
     height: 120px;
     text-align: center;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .menuitem a {
@@ -139,6 +165,7 @@ header {
     color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -159,17 +186,18 @@ header {
 }
 
 
-/*----------------------------------------------Hover.css*/
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*----------------------------------------------Footer*/
+
+/*--------------------------------------------Footer*/
 
 footer {
-    background: #525252;
+    background-color: #525252;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
@@ -218,8 +246,7 @@ footer .cv-pdf i:hover {
     margin: 20px;
 }
 
-
-/*----------------------------------------------Three Reasons*/
+/*--------------------------------------------Three Reasons*/
 
 .three-reasons-icon {
     font-size: 26px;
@@ -230,8 +257,7 @@ footer .cv-pdf i:hover {
     margin-bottom: 15px;
 }
 
-
-/*----------------------------------------------Personal Info*/
+/*--------------------------------------------Personal Info*/
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -242,7 +268,6 @@ footer .cv-pdf i:hover {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-
 }
 
 .personal-info-item .key p,
@@ -268,7 +293,7 @@ footer .cv-pdf i:hover {
     width: 60%;
 }
 
-/*----------------------------------------------Skills*/
+/*--------------------------------------------Skills*/
 
 .progress {
     position: relative;
@@ -284,12 +309,13 @@ footer .cv-pdf i:hover {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
+
 .progress-section {
-    margin: 40px;
+    margin: 40px 20px;
 }
 
 
-/*----------------------------------------------Work History*/
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -304,12 +330,12 @@ footer .cv-pdf i:hover {
 }
 
 .timeline-item::before {
-    content: attr(dates);
+    content: attr(data-dates);
     position: absolute;
     left: 2.5em;
     top: 3em;
     display: block;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 500;
     font-size: .8em;
     padding: 0;
@@ -337,15 +363,15 @@ footer .cv-pdf i:hover {
     margin-bottom: 30px;
 }
 
-
-/*----------------------------------------------Contact*/
+/*--------------------------------------------Contact*/
 
 .contact-heading {
-    font-family: "Exo" sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 
 .center-form {
     padding-top: 10px;
@@ -360,7 +386,12 @@ button[type="submit"] {
     color: #fafafa;
 }
 
-/*----------------------------------------------Media Queries*/
+/*--------------------------------------------Map*/
+div #map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
     .section-column {
